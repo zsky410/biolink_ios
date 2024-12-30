@@ -28,6 +28,30 @@
         }
       }
 
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
       .phone-container {
         position: relative;
         width: 280px;
@@ -38,6 +62,7 @@
         border: 12px solid #000;
         overflow: hidden;
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        animation: float 6s ease-in-out infinite;
       }
 
       /* Thêm notch của iPhone */
@@ -89,6 +114,7 @@
         object-fit: contain;
         transition: transform 0.3s ease;
         filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.1));
+        animation: pulse 3s ease-in-out infinite;
       }
 
       .logo:hover {
@@ -126,6 +152,7 @@
         width: 60px;
         height: 40px;
         object-fit: contain;
+        animation: float 3s ease-in-out infinite;
       }
 
       .footer {
