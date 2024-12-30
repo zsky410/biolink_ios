@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group iOS Việt Nam</title>
+    <style>
+      body {
+        margin: 0;
+        /* padding: 20px; */
+        font-family: Arial, sans-serif;
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .phone-container {
+        position: relative;
+        width: 280px;
+        height: 590px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 40px;
+        border: 12px solid #000;
+        overflow: hidden;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Thêm notch của iPhone */
+      .notch {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 25px;
+        background-color: #000;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+
+      .content {
+        padding: 40px 20px 20px;
+        text-align: center;
+        background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        height: calc(100% - 60px);
+        box-sizing: border-box;
+        margin-bottom: 0;
+      }
+
+      .title {
+        margin-top: 20px;
+        text-align: left;
+        font-size: 22px;
+        color: #0f144f;
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      .subtitle {
+        font-size: 16px;
+        color: #161d62;
+        margin-bottom: 30px;
+      }
+
+      .logo {
+        width: 240px;
+        height: 140px;
+        margin: 20px auto;
+        display: block;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.1));
+      }
+
+      .logo:hover {
+        transform: scale(1.05);
+      }
+
+      .button {
+        display: block;
+        width: 90%;
+        padding: 18px 0;
+        margin: 20px auto;
+        background: linear-gradient(45deg, #1a237e, #0a1b48);
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 15px;
+        font-weight: bold;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        border: none;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        background: linear-gradient(45deg, #0a1b48, #1a237e);
+      }
+
+      .button:active {
+        transform: translateY(0);
+      }
+
+      .flag {
+        width: 60px;
+        height: 40px;
+        object-fit: contain;
+      }
+
+      .footer {
+        background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 12px;
+        padding: 5px 0;
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="phone-container">
+      <div class="notch"></div>
+      <div class="content">
+        <div class="title">
+          Tham gia Group iOS Việt Nam
+          <img src="vn.png" class="flag" alt="VN flag" />
+        </div>
+        <div class="subtitle">để đặt những câu hỏi về iOS nhé</div>
+
+        <img src="ava.png" alt="iOS Logo" class="logo" />
+
+        <a
+          href="https://www.facebook.com/share/g/5Ey7DvSFjheY3JZq/"
+          class="button"
+          >Tổng hợp phím tắt Iphone</a
+        >
+        <a
+          href="https://www.facebook.com/share/g/5Ey7DvSFjheY3JZq/"
+          class="button"
+          >Group Hỏi Đáp IOS</a
+        >
+
+        <div class="footer">Cập Nhật Lỗi iOS - Phím Tắt iPhone</div>
+      </div>
+    </div>
+  </body>
+</html>
