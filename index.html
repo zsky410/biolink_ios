@@ -182,13 +182,27 @@
 
         <img src="ava.png" alt="iOS Logo" class="logo" />
 
+        <script>
+          function openFacebookGroup(fbGroupId) {
+            // Thử mở app Facebook
+            window.location.href = `fb://group/${fbGroupId}`;
+
+            // Sau 2 giây, nếu không mở được app thì mở trên web
+            setTimeout(function () {
+              window.location.href = `https://www.facebook.com/share/g/${fbGroupId}`;
+            }, 2000);
+          }
+        </script>
+
         <a
-          href="https://www.facebook.com/share/g/5Ey7DvSFjheY3JZq/"
+          href="#"
+          onclick="openFacebookGroup('5Ey7DvSFjheY3JZq'); return false;"
           class="button"
           >Tổng hợp phím tắt Iphone</a
         >
         <a
-          href="https://www.facebook.com/share/g/5Ey7DvSFjheY3JZq/"
+          href="#"
+          onclick="openFacebookGroup('5Ey7DvSFjheY3JZq'); return false;"
           class="button"
           >Group Hỏi Đáp IOS</a
         >
